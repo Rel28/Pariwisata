@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet">
+</head>
+</head>
+<body class="font-[Poppins]">
+     <!-- NavBar -->
+     <header class=" bg-white border-b fixed border-[#DFDFDF] top-0 left-0 w-full flex items-center z-50">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-black block py-6">WanderWhisper</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="index.html" class="text-base text-black py-2 mx-8 flex group-hover:text-gray-500">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="explore.html" class="text-base text-black py-2 mx-8 flex group-hover:text-gray-500">Explore</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about-us" class="text-base text-black py-2 mx-8 flex group-hover:text-gray-500">About Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- NavBar -->
+
+    <!-- Hero Section -->
+    <section id="#home" class="max-w-[1440px] mx-auto pt-[120px] h-[70vh]">
+        <div class="bg-[url('/images/bali-indonesia.jpg')] bg-cover bg-center md:rounded-[20px] h-[80vh] relative">
+            <div class="relative z-10 w-full h-full flex flex-col justify-center text-white md:pl-[40px] text-center items-center md:items-start md:text-left">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4">Search your place <br>to discover!</h1>
+                <p class="text-sm md:text-lg lg:text-lg mb-6 font-light">Find a place for you to discover your self!</p>
+            </div>
+            <div class="absolute inset-0 bg-black opacity-50 md:rounded-[20px]"></div>
+        </div>
+
+        <!-- Content Search -->
+        <div class="bg-white shadow-custom w-full lg:w-[1250px] h-[155vh] lg:h-[170vh] -mt-[150px] z-60 relative mx-auto lg:rounded-[3px]">
+            <div class="w-[300px] lg:w-[1150px] h-[50px] lg:h-[60px] top-[20px] relative mx-auto flex items-center">
+                <div class="bg-white h-[50px] shadow-custom flex-grow rounded-search flex items-center">
+                    <input type="text" placeholder="Search..." class="flex-grow h-full px-4 rounded-full outline-none"/>
+                </div>
+                <button type="submit" class="bg-blue-500  px-4 py-2 rounded-buttonsearch m-0 h-[50px] shadow-custom">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <mask id="mask0_90_147" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                        <rect width="30" height="30" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_90_147)">
+                        <path d="M24.5 26.25L16.625 18.375C16 18.875 15.2812 19.2708 14.4687 19.5625C13.6562 19.8542 12.7917 20 11.875 20C9.60417 20 7.68229 19.2135 6.10938 17.6406C4.53646 16.0677 3.75 14.1458 3.75 11.875C3.75 9.60417 4.53646 7.68229 6.10938 6.10938C7.68229 4.53646 9.60417 3.75 11.875 3.75C14.1458 3.75 16.0677 4.53646 17.6406 6.10938C19.2135 7.68229 20 9.60417 20 11.875C20 12.7917 19.8542 13.6562 19.5625 14.4687C19.2708 15.2812 18.875 16 18.375 16.625L26.25 24.5L24.5 26.25ZM11.875 17.5C13.4375 17.5 14.7656 16.9531 15.8594 15.8594C16.9531 14.7656 17.5 13.4375 17.5 11.875C17.5 10.3125 16.9531 8.98438 15.8594 7.89062C14.7656 6.79688 13.4375 6.25 11.875 6.s25C10.3125 6.25 8.98438 6.79688 7.89062 7.89062C6.79688 8.98438 6.25 10.3125 6.25 11.875C6.25 13.4375 6.79688 14.7656 7.89062 15.8594C8.98438 16.9531 10.3125 17.5 11.875 17.5Z" fill="white"/>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="lg:w-[1150px] h-[180vh] lg:h-[180vh] top-[50px] relative mx-auto">
+                <div class="flex flex-wrap items-center justify-evenly gap-[30px] md:gap-[120px] lg:gap-[50px] lg:w-[1150px] lg:h-[138vh] gap-y-10 w-[400px] h-[100vh] mx-auto">
+
+                <!-- Content-1 -->
+                    <a href="content-1.html">
+                        <button id="#content-1" name="Pantai-Kuta" type="button" class="bg-white w-[170px] lg:w-[350px] h-[300px] lg:h-[500px] shadow-custom rounded-[20px]">
+                            <div class="w-[280px] lg:w-[300px] h-[510px] lg:h-[440px] mx-auto">
+                                <div class="bg-[url('/images/pantai_kuta_bali_1200.jpg')] w-[170px] h-[150px] lg:w-full lg:h-[230px] rounded-custom bg-cover bg-center"></div>
+                                <div class="w-[170px] lg:w-full h-[40px] lg:h-[45px] bg-[#3A3A3A] flex">
+                                    <svg class="my-auto ml-[10px]" xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                        <path d="M13.3039 15.5187L12.7764 11.296C12.7017 10.6979 12.411 10.1477 11.9591 9.74884C11.5071 9.35 10.925 9.13002 10.3223 9.13025H8.50595C7.90346 9.13042 7.32178 9.35058 6.87017 9.74938C6.41857 10.1482 6.12813 10.6982 6.05342 11.296L5.52517 15.5187C5.49618 15.7507 5.51688 15.9862 5.58589 16.2096C5.6549 16.4329 5.77065 16.6391 5.92544 16.8143C6.08024 16.9895 6.27054 17.1298 6.48371 17.2258C6.69688 17.3219 6.92804 17.3714 7.16184 17.3713H11.668C11.9018 17.3713 12.1328 17.3216 12.3459 17.2256C12.559 17.1295 12.7492 16.9892 12.9039 16.814C13.0586 16.6388 13.1742 16.4327 13.2432 16.2094C13.3122 15.986 13.3328 15.7506 13.3039 15.5187V15.5187Z" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.41475 5.8334C10.7802 5.8334 11.8871 4.72651 11.8871 3.3611C11.8871 1.99568 10.7802 0.888794 9.41475 0.888794C8.04933 0.888794 6.94244 1.99568 6.94244 3.3611C6.94244 4.72651 8.04933 5.8334 9.41475 5.8334Z" stroke="white" stroke-width="0.973081"/>
+                                            <path d="M2.822 8.30544C3.73228 8.30544 4.4702 7.56751 4.4702 6.65724C4.4702 5.74696 3.73228 5.00903 2.822 5.00903C1.91172 5.00903 1.1738 5.74696 1.1738 6.65724C1.1738 7.56751 1.91172 8.30544 2.822 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                            <path d="M16.0077 8.30544C16.918 8.30544 17.6559 7.56751 17.6559 6.65724C17.6559 5.74696 16.918 5.00903 16.0077 5.00903C15.0975 5.00903 14.3595 5.74696 14.3595 6.65724C14.3595 7.56751 15.0975 8.30544 16.0077 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                            <path d="M2.82207 10.778H2.56989C2.17973 10.7779 1.80221 10.9163 1.50448 11.1684C1.20675 11.4206 1.00812 11.7702 0.943943 12.155L0.669518 13.8032C0.630136 14.0394 0.642669 14.2813 0.706247 14.5121C0.769825 14.7429 0.88292 14.9571 1.03767 15.1397C1.19241 15.3224 1.3851 15.4692 1.60231 15.5698C1.81953 15.6705 2.05607 15.7226 2.29547 15.7226H5.29437M16.0077 10.778H16.2599C16.65 10.7779 17.0276 10.9163 17.3253 11.1684C17.623 11.4206 17.8216 11.7702 17.8858 12.155L18.1602 13.8032C18.1996 14.0394 18.1871 14.2813 18.1235 14.5121C18.0599 14.7429 17.9468 14.9571 17.7921 15.1397C17.6373 15.3224 17.4447 15.4692 17.2274 15.5698C17.0102 15.6705 16.7737 15.7226 16.5343 15.7226H13.5354" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <p class="my-auto text-xs text-white font-normal ml-[10px]">120+ Views</p>
+                                </div>
+                                <div class="mt-[15px] w-[170px] lg:w-full h-[30px] flex">
+                                    <h1 class="my-auto lg:text-2xl text-lg font-bold text-[#3A3A3A] ml-[10px]">Kuta Beach</h1>
+                                    <div class="bg-[#3A3A3A] w-[35px] h-[35px] my-auto ml-auto mr-[10px] rounded-full px-2 py-2.5 hidden lg:block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 25 19" fill="none">
+                                            <path d="M15.4753 0.20392L24.679 9.40762L15.4753 18.6113L13.3278 16.3871L18.7733 10.9416L0.135806 10.9416L0.135806 7.87367L18.7733 7.87367L13.3278 2.42815L15.4753 0.20392Z" fill="#FCFCFC"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-[255px] lg:w-[280px] h-[60px] lg:h-[50px] mx-auto mt-[10px] hidden lg:block">
+                                    <p class="text-justify ">Bali's hotspot for surfing, sunsets, and vibrant nightlife.</p>
+                                </div>
+                                <div class="w-[255px] lg:w-[280px] h-[40px] mx-auto flex items-center">
+                                    <svg class="my-auto" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 20" fill="none">
+                                        <path d="M4.63641 19.054C4.15926 19.2987 3.61782 18.8698 3.71424 18.3222L4.74025 12.4752L0.385285 8.32665C-0.0214085 7.9385 0.189973 7.22895 0.735116 7.15231L6.78979 6.29195L9.48954 0.943117C9.73306 0.461018 10.3919 0.461018 10.6355 0.943117L13.3352 6.29195L19.3899 7.15231C19.935 7.22895 20.1464 7.9385 19.7385 8.32665L15.3848 12.4752L16.4108 18.3222C16.5072 18.8698 15.9657 19.2987 15.4886 19.054L10.0606 16.2652L4.63517 19.054H4.63641Z" fill="#DF6951"/>
+                                    </svg>
+                                    <p class="my-auto ml-[10px]">5.0</p>
+                                </div>
+                            </div>
+                        </button>
+                    </a>
+                <!-- Content-1 -->
+
+                <!-- Content-2 -->
+                    <button id="#content-1" name="Pantai-Kuta" type="button" class="bg-white w-[170px] lg:w-[350px] h-[300px] lg:h-[500px] shadow-custom rounded-[20px]">
+                        <div class="w-[280px] lg:w-[300px] h-[510px] lg:h-[440px] mx-auto">
+                            <div class="bg-[url('/images/images.jpg')] w-[170px] h-[150px] lg:w-full lg:h-[230px] rounded-custom bg-cover bg-center"></div>
+                            <div class="w-[170px] lg:w-full h-[40px] lg:h-[45px] bg-[#3A3A3A] flex">
+                                <svg class="my-auto ml-[10px]" xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                    <path d="M13.3039 15.5187L12.7764 11.296C12.7017 10.6979 12.411 10.1477 11.9591 9.74884C11.5071 9.35 10.925 9.13002 10.3223 9.13025H8.50595C7.90346 9.13042 7.32178 9.35058 6.87017 9.74938C6.41857 10.1482 6.12813 10.6982 6.05342 11.296L5.52517 15.5187C5.49618 15.7507 5.51688 15.9862 5.58589 16.2096C5.6549 16.4329 5.77065 16.6391 5.92544 16.8143C6.08024 16.9895 6.27054 17.1298 6.48371 17.2258C6.69688 17.3219 6.92804 17.3714 7.16184 17.3713H11.668C11.9018 17.3713 12.1328 17.3216 12.3459 17.2256C12.559 17.1295 12.7492 16.9892 12.9039 16.814C13.0586 16.6388 13.1742 16.4327 13.2432 16.2094C13.3122 15.986 13.3328 15.7506 13.3039 15.5187V15.5187Z" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.41475 5.8334C10.7802 5.8334 11.8871 4.72651 11.8871 3.3611C11.8871 1.99568 10.7802 0.888794 9.41475 0.888794C8.04933 0.888794 6.94244 1.99568 6.94244 3.3611C6.94244 4.72651 8.04933 5.8334 9.41475 5.8334Z" stroke="white" stroke-width="0.973081"/>
+                                        <path d="M2.822 8.30544C3.73228 8.30544 4.4702 7.56751 4.4702 6.65724C4.4702 5.74696 3.73228 5.00903 2.822 5.00903C1.91172 5.00903 1.1738 5.74696 1.1738 6.65724C1.1738 7.56751 1.91172 8.30544 2.822 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                        <path d="M16.0077 8.30544C16.918 8.30544 17.6559 7.56751 17.6559 6.65724C17.6559 5.74696 16.918 5.00903 16.0077 5.00903C15.0975 5.00903 14.3595 5.74696 14.3595 6.65724C14.3595 7.56751 15.0975 8.30544 16.0077 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                        <path d="M2.82207 10.778H2.56989C2.17973 10.7779 1.80221 10.9163 1.50448 11.1684C1.20675 11.4206 1.00812 11.7702 0.943943 12.155L0.669518 13.8032C0.630136 14.0394 0.642669 14.2813 0.706247 14.5121C0.769825 14.7429 0.88292 14.9571 1.03767 15.1397C1.19241 15.3224 1.3851 15.4692 1.60231 15.5698C1.81953 15.6705 2.05607 15.7226 2.29547 15.7226H5.29437M16.0077 10.778H16.2599C16.65 10.7779 17.0276 10.9163 17.3253 11.1684C17.623 11.4206 17.8216 11.7702 17.8858 12.155L18.1602 13.8032C18.1996 14.0394 18.1871 14.2813 18.1235 14.5121C18.0599 14.7429 17.9468 14.9571 17.7921 15.1397C17.6373 15.3224 17.4447 15.4692 17.2274 15.5698C17.0102 15.6705 16.7737 15.7226 16.5343 15.7226H13.5354" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="my-auto text-xs text-white font-normal ml-[10px]">120+ Views</p>
+                            </div>
+                            <div class="mt-[15px] w-[170px] lg:w-full h-[30px] flex">
+                                <h1 class="my-auto lg:text-2xl text-lg font-bold text-[#3A3A3A] ml-[10px]">Monkey Forest</h1>
+                                <div class="bg-[#3A3A3A] w-[35px] h-[35px] my-auto ml-auto mr-[10px] rounded-full px-2 py-2.5 hidden lg:block">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 25 19" fill="none">
+                                        <path d="M15.4753 0.20392L24.679 9.40762L15.4753 18.6113L13.3278 16.3871L18.7733 10.9416L0.135806 10.9416L0.135806 7.87367L18.7733 7.87367L13.3278 2.42815L15.4753 0.20392Z" fill="#FCFCFC"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="w-[255px] lg:w-[280px] h-[60px] lg:h-[50px] mx-auto mt-[10px] hidden lg:block">
+                                <p class="text-justify ">Monkey sanctuary with temples, Ubud.</p>
+                            </div>
+                            <div class="w-[255px] lg:w-[280px] h-[40px] mx-auto flex items-center">
+                                <svg class="my-auto" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4.63641 19.054C4.15926 19.2987 3.61782 18.8698 3.71424 18.3222L4.74025 12.4752L0.385285 8.32665C-0.0214085 7.9385 0.189973 7.22895 0.735116 7.15231L6.78979 6.29195L9.48954 0.943117C9.73306 0.461018 10.3919 0.461018 10.6355 0.943117L13.3352 6.29195L19.3899 7.15231C19.935 7.22895 20.1464 7.9385 19.7385 8.32665L15.3848 12.4752L16.4108 18.3222C16.5072 18.8698 15.9657 19.2987 15.4886 19.054L10.0606 16.2652L4.63517 19.054H4.63641Z" fill="#DF6951"/>
+                                </svg>
+                                <p class="my-auto ml-[10px]">5.0</p>
+                            </div>
+                        </div>
+                    </button>
+
+                <!-- Content-2 -->
+
+                <!-- Content-3 -->
+
+                    <button id="#content-1" name="Pantai-Kuta" type="button" class="bg-white w-[170px] lg:w-[350px] h-[300px] lg:h-[500px] shadow-custom rounded-[20px]">
+                        <div class="w-[280px] lg:w-[300px] h-[510px] lg:h-[440px] mx-auto">
+                            <div class="bg-[url('/images/gitgit-waterfall.jpg')] w-[170px] h-[150px] lg:w-full lg:h-[230px] rounded-custom bg-cover bg-center"></div>
+                            <div class="w-[170px] lg:w-full h-[40px] lg:h-[45px] bg-[#3A3A3A] flex">
+                                <svg class="my-auto ml-[10px]" xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                    <path d="M13.3039 15.5187L12.7764 11.296C12.7017 10.6979 12.411 10.1477 11.9591 9.74884C11.5071 9.35 10.925 9.13002 10.3223 9.13025H8.50595C7.90346 9.13042 7.32178 9.35058 6.87017 9.74938C6.41857 10.1482 6.12813 10.6982 6.05342 11.296L5.52517 15.5187C5.49618 15.7507 5.51688 15.9862 5.58589 16.2096C5.6549 16.4329 5.77065 16.6391 5.92544 16.8143C6.08024 16.9895 6.27054 17.1298 6.48371 17.2258C6.69688 17.3219 6.92804 17.3714 7.16184 17.3713H11.668C11.9018 17.3713 12.1328 17.3216 12.3459 17.2256C12.559 17.1295 12.7492 16.9892 12.9039 16.814C13.0586 16.6388 13.1742 16.4327 13.2432 16.2094C13.3122 15.986 13.3328 15.7506 13.3039 15.5187V15.5187Z" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.41475 5.8334C10.7802 5.8334 11.8871 4.72651 11.8871 3.3611C11.8871 1.99568 10.7802 0.888794 9.41475 0.888794C8.04933 0.888794 6.94244 1.99568 6.94244 3.3611C6.94244 4.72651 8.04933 5.8334 9.41475 5.8334Z" stroke="white" stroke-width="0.973081"/>
+                                        <path d="M2.822 8.30544C3.73228 8.30544 4.4702 7.56751 4.4702 6.65724C4.4702 5.74696 3.73228 5.00903 2.822 5.00903C1.91172 5.00903 1.1738 5.74696 1.1738 6.65724C1.1738 7.56751 1.91172 8.30544 2.822 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                        <path d="M16.0077 8.30544C16.918 8.30544 17.6559 7.56751 17.6559 6.65724C17.6559 5.74696 16.918 5.00903 16.0077 5.00903C15.0975 5.00903 14.3595 5.74696 14.3595 6.65724C14.3595 7.56751 15.0975 8.30544 16.0077 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                        <path d="M2.82207 10.778H2.56989C2.17973 10.7779 1.80221 10.9163 1.50448 11.1684C1.20675 11.4206 1.00812 11.7702 0.943943 12.155L0.669518 13.8032C0.630136 14.0394 0.642669 14.2813 0.706247 14.5121C0.769825 14.7429 0.88292 14.9571 1.03767 15.1397C1.19241 15.3224 1.3851 15.4692 1.60231 15.5698C1.81953 15.6705 2.05607 15.7226 2.29547 15.7226H5.29437M16.0077 10.778H16.2599C16.65 10.7779 17.0276 10.9163 17.3253 11.1684C17.623 11.4206 17.8216 11.7702 17.8858 12.155L18.1602 13.8032C18.1996 14.0394 18.1871 14.2813 18.1235 14.5121C18.0599 14.7429 17.9468 14.9571 17.7921 15.1397C17.6373 15.3224 17.4447 15.4692 17.2274 15.5698C17.0102 15.6705 16.7737 15.7226 16.5343 15.7226H13.5354" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="my-auto text-xs text-white font-normal ml-[10px]">120+ Views</p>
+                            </div>
+                            <div class="mt-[15px] w-[170px] lg:w-full h-[30px] flex">
+                                <h1 class="my-auto lg:text-2xl text-lg font-bold text-[#3A3A3A] ml-[10px]">Gitgit Waterfall</h1>
+                                <div class="bg-[#3A3A3A] w-[35px] h-[35px] my-auto ml-auto mr-[10px] rounded-full px-2 py-2.5 hidden lg:block">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 25 19" fill="none">
+                                        <path d="M15.4753 0.20392L24.679 9.40762L15.4753 18.6113L13.3278 16.3871L18.7733 10.9416L0.135806 10.9416L0.135806 7.87367L18.7733 7.87367L13.3278 2.42815L15.4753 0.20392Z" fill="#FCFCFC"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="w-[255px] lg:w-[280px] h-[60px] lg:h-[50px] mx-auto mt-[10px] hidden lg:block">
+                                <p class="text-justify ">Bali's hotspot for surfing, sunsets, and vibrant nightlife.</p>
+                            </div>
+                            <div class="w-[255px] lg:w-[280px] h-[40px] mx-auto flex items-center">
+                                <svg class="my-auto" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4.63641 19.054C4.15926 19.2987 3.61782 18.8698 3.71424 18.3222L4.74025 12.4752L0.385285 8.32665C-0.0214085 7.9385 0.189973 7.22895 0.735116 7.15231L6.78979 6.29195L9.48954 0.943117C9.73306 0.461018 10.3919 0.461018 10.6355 0.943117L13.3352 6.29195L19.3899 7.15231C19.935 7.22895 20.1464 7.9385 19.7385 8.32665L15.3848 12.4752L16.4108 18.3222C16.5072 18.8698 15.9657 19.2987 15.4886 19.054L10.0606 16.2652L4.63517 19.054H4.63641Z" fill="#DF6951"/>
+                                </svg>
+                                <p class="my-auto ml-[10px]">5.0</p>
+                            </div>
+                        </div>
+                    </button>
+
+                <!-- Content-3 -->
+
+                <!-- Content-4 -->
+                    <button id="#content-1" name="Pantai-Kuta" type="button" class="bg-white w-[170px] lg:w-[350px] h-[300px] lg:h-[500px] shadow-custom rounded-[20px]">
+                        <div class="w-[280px] lg:w-[300px] h-[510px] lg:h-[440px] mx-auto">
+                            <div class="bg-[url('/images/sanur.jpg')] w-[170px] h-[150px] lg:w-full lg:h-[230px] rounded-custom bg-cover bg-center"></div>
+                            <div class="w-[170px] lg:w-full h-[40px] lg:h-[45px] bg-[#3A3A3A] flex">
+                                <svg class="my-auto ml-[10px]" xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                    <path d="M13.3039 15.5187L12.7764 11.296C12.7017 10.6979 12.411 10.1477 11.9591 9.74884C11.5071 9.35 10.925 9.13002 10.3223 9.13025H8.50595C7.90346 9.13042 7.32178 9.35058 6.87017 9.74938C6.41857 10.1482 6.12813 10.6982 6.05342 11.296L5.52517 15.5187C5.49618 15.7507 5.51688 15.9862 5.58589 16.2096C5.6549 16.4329 5.77065 16.6391 5.92544 16.8143C6.08024 16.9895 6.27054 17.1298 6.48371 17.2258C6.69688 17.3219 6.92804 17.3714 7.16184 17.3713H11.668C11.9018 17.3713 12.1328 17.3216 12.3459 17.2256C12.559 17.1295 12.7492 16.9892 12.9039 16.814C13.0586 16.6388 13.1742 16.4327 13.2432 16.2094C13.3122 15.986 13.3328 15.7506 13.3039 15.5187V15.5187Z" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.41475 5.8334C10.7802 5.8334 11.8871 4.72651 11.8871 3.3611C11.8871 1.99568 10.7802 0.888794 9.41475 0.888794C8.04933 0.888794 6.94244 1.99568 6.94244 3.3611C6.94244 4.72651 8.04933 5.8334 9.41475 5.8334Z" stroke="white" stroke-width="0.973081"/>
+                                        <path d="M2.822 8.30544C3.73228 8.30544 4.4702 7.56751 4.4702 6.65724C4.4702 5.74696 3.73228 5.00903 2.822 5.00903C1.91172 5.00903 1.1738 5.74696 1.1738 6.65724C1.1738 7.56751 1.91172 8.30544 2.822 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                        <path d="M16.0077 8.30544C16.918 8.30544 17.6559 7.56751 17.6559 6.65724C17.6559 5.74696 16.918 5.00903 16.0077 5.00903C15.0975 5.00903 14.3595 5.74696 14.3595 6.65724C14.3595 7.56751 15.0975 8.30544 16.0077 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                        <path d="M2.82207 10.778H2.56989C2.17973 10.7779 1.80221 10.9163 1.50448 11.1684C1.20675 11.4206 1.00812 11.7702 0.943943 12.155L0.669518 13.8032C0.630136 14.0394 0.642669 14.2813 0.706247 14.5121C0.769825 14.7429 0.88292 14.9571 1.03767 15.1397C1.19241 15.3224 1.3851 15.4692 1.60231 15.5698C1.81953 15.6705 2.05607 15.7226 2.29547 15.7226H5.29437M16.0077 10.778H16.2599C16.65 10.7779 17.0276 10.9163 17.3253 11.1684C17.623 11.4206 17.8216 11.7702 17.8858 12.155L18.1602 13.8032C18.1996 14.0394 18.1871 14.2813 18.1235 14.5121C18.0599 14.7429 17.9468 14.9571 17.7921 15.1397C17.6373 15.3224 17.4447 15.4692 17.2274 15.5698C17.0102 15.6705 16.7737 15.7226 16.5343 15.7226H13.5354" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="my-auto text-xs text-white font-normal ml-[10px]">120+ Views</p>
+                            </div>
+                            <div class="mt-[15px] w-[170px] lg:w-full h-[30px] flex">
+                                <h1 class="my-auto lg:text-2xl text-lg font-bold text-[#3A3A3A] ml-[10px]">Sanur Beach</h1>
+                                <div class="bg-[#3A3A3A] w-[35px] h-[35px] my-auto ml-auto mr-[10px] rounded-full px-2 py-2.5 hidden lg:block">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 25 19" fill="none">
+                                        <path d="M15.4753 0.20392L24.679 9.40762L15.4753 18.6113L13.3278 16.3871L18.7733 10.9416L0.135806 10.9416L0.135806 7.87367L18.7733 7.87367L13.3278 2.42815L15.4753 0.20392Z" fill="#FCFCFC"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="w-[255px] lg:w-[280px] h-[60px] lg:h-[50px] mx-auto mt-[10px] hidden lg:block">
+                                <p class="text-justify ">Bali's hotspot for surfing, sunsets, and vibrant nightlife.</p>
+                            </div>
+                            <div class="w-[255px] lg:w-[280px] h-[40px] mx-auto flex items-center">
+                                <svg class="my-auto" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4.63641 19.054C4.15926 19.2987 3.61782 18.8698 3.71424 18.3222L4.74025 12.4752L0.385285 8.32665C-0.0214085 7.9385 0.189973 7.22895 0.735116 7.15231L6.78979 6.29195L9.48954 0.943117C9.73306 0.461018 10.3919 0.461018 10.6355 0.943117L13.3352 6.29195L19.3899 7.15231C19.935 7.22895 20.1464 7.9385 19.7385 8.32665L15.3848 12.4752L16.4108 18.3222C16.5072 18.8698 15.9657 19.2987 15.4886 19.054L10.0606 16.2652L4.63517 19.054H4.63641Z" fill="#DF6951"/>
+                                </svg>
+                                <p class="my-auto ml-[10px]">5.0</p>
+                            </div>
+                        </div>
+                    </button>
+                <!-- Content-4 -->
+
+                <!-- Content-5 -->
+                    <button id="#content-1" name="Pantai-Kuta" type="button" class="bg-white w-[170px] lg:w-[350px] h-[300px] lg:h-[500px] shadow-custom rounded-[20px]">
+                        <div class="w-[280px] lg:w-[300px] h-[510px] lg:h-[440px] mx-auto">
+                            <div class="bg-[url('/images/uluwatu-temple.jpg')] w-[170px] h-[150px] lg:w-full lg:h-[230px] rounded-custom bg-cover bg-center"></div>
+                            <div class="w-[170px] lg:w-full h-[40px] lg:h-[45px] bg-[#3A3A3A] flex">
+                                <svg class="my-auto ml-[10px]" xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                    <path d="M13.3039 15.5187L12.7764 11.296C12.7017 10.6979 12.411 10.1477 11.9591 9.74884C11.5071 9.35 10.925 9.13002 10.3223 9.13025H8.50595C7.90346 9.13042 7.32178 9.35058 6.87017 9.74938C6.41857 10.1482 6.12813 10.6982 6.05342 11.296L5.52517 15.5187C5.49618 15.7507 5.51688 15.9862 5.58589 16.2096C5.6549 16.4329 5.77065 16.6391 5.92544 16.8143C6.08024 16.9895 6.27054 17.1298 6.48371 17.2258C6.69688 17.3219 6.92804 17.3714 7.16184 17.3713H11.668C11.9018 17.3713 12.1328 17.3216 12.3459 17.2256C12.559 17.1295 12.7492 16.9892 12.9039 16.814C13.0586 16.6388 13.1742 16.4327 13.2432 16.2094C13.3122 15.986 13.3328 15.7506 13.3039 15.5187V15.5187Z" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.41475 5.8334C10.7802 5.8334 11.8871 4.72651 11.8871 3.3611C11.8871 1.99568 10.7802 0.888794 9.41475 0.888794C8.04933 0.888794 6.94244 1.99568 6.94244 3.3611C6.94244 4.72651 8.04933 5.8334 9.41475 5.8334Z" stroke="white" stroke-width="0.973081"/>
+                                        <path d="M2.822 8.30544C3.73228 8.30544 4.4702 7.56751 4.4702 6.65724C4.4702 5.74696 3.73228 5.00903 2.822 5.00903C1.91172 5.00903 1.1738 5.74696 1.1738 6.65724C1.1738 7.56751 1.91172 8.30544 2.822 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                        <path d="M16.0077 8.30544C16.918 8.30544 17.6559 7.56751 17.6559 6.65724C17.6559 5.74696 16.918 5.00903 16.0077 5.00903C15.0975 5.00903 14.3595 5.74696 14.3595 6.65724C14.3595 7.56751 15.0975 8.30544 16.0077 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                        <path d="M2.82207 10.778H2.56989C2.17973 10.7779 1.80221 10.9163 1.50448 11.1684C1.20675 11.4206 1.00812 11.7702 0.943943 12.155L0.669518 13.8032C0.630136 14.0394 0.642669 14.2813 0.706247 14.5121C0.769825 14.7429 0.88292 14.9571 1.03767 15.1397C1.19241 15.3224 1.3851 15.4692 1.60231 15.5698C1.81953 15.6705 2.05607 15.7226 2.29547 15.7226H5.29437M16.0077 10.778H16.2599C16.65 10.7779 17.0276 10.9163 17.3253 11.1684C17.623 11.4206 17.8216 11.7702 17.8858 12.155L18.1602 13.8032C18.1996 14.0394 18.1871 14.2813 18.1235 14.5121C18.0599 14.7429 17.9468 14.9571 17.7921 15.1397C17.6373 15.3224 17.4447 15.4692 17.2274 15.5698C17.0102 15.6705 16.7737 15.7226 16.5343 15.7226H13.5354" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="my-auto text-xs text-white font-normal ml-[10px]">120+ Views</p>
+                            </div>
+                            <div class="mt-[15px] w-[170px] lg:w-full h-[30px] flex">
+                                <h1 class="my-auto lg:text-2xl text-lg font-bold text-[#3A3A3A] ml-[10px]">Uluwatu Temple</h1>
+                                <div class="bg-[#3A3A3A] w-[35px] h-[35px] my-auto ml-auto mr-[10px] rounded-full px-2 py-2.5 hidden lg:block">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 25 19" fill="none">
+                                        <path d="M15.4753 0.20392L24.679 9.40762L15.4753 18.6113L13.3278 16.3871L18.7733 10.9416L0.135806 10.9416L0.135806 7.87367L18.7733 7.87367L13.3278 2.42815L15.4753 0.20392Z" fill="#FCFCFC"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="w-[255px] lg:w-[280px] h-[60px] lg:h-[50px] mx-auto mt-[10px] hidden lg:block">
+                                <p class="text-justify ">Bali's hotspot for surfing, sunsets, and vibrant nightlife.</p>
+                            </div>
+                            <div class="w-[255px] lg:w-[280px] h-[40px] mx-auto flex items-center">
+                                <svg class="my-auto" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4.63641 19.054C4.15926 19.2987 3.61782 18.8698 3.71424 18.3222L4.74025 12.4752L0.385285 8.32665C-0.0214085 7.9385 0.189973 7.22895 0.735116 7.15231L6.78979 6.29195L9.48954 0.943117C9.73306 0.461018 10.3919 0.461018 10.6355 0.943117L13.3352 6.29195L19.3899 7.15231C19.935 7.22895 20.1464 7.9385 19.7385 8.32665L15.3848 12.4752L16.4108 18.3222C16.5072 18.8698 15.9657 19.2987 15.4886 19.054L10.0606 16.2652L4.63517 19.054H4.63641Z" fill="#DF6951"/>
+                                </svg>
+                                <p class="my-auto ml-[10px]">5.0</p>
+                            </div>
+                        </div>
+                    </button>
+                <!-- Content-5 -->
+
+                <!-- Content-6 -->
+                    <button id="#content-1" name="Pantai-Kuta" type="button" class="bg-white w-[170px] lg:w-[350px] h-[300px] lg:h-[500px] shadow-custom rounded-[20px]">
+                        <div class="w-[280px] lg:w-[300px] h-[510px] lg:h-[440px] mx-auto">
+                            <div class="bg-[url('/images/kebun-raya.jpg')] w-[170px] h-[150px] lg:w-full lg:h-[230px] rounded-custom bg-cover bg-center"></div>
+                            <div class="w-[170px] lg:w-full h-[40px] lg:h-[45px] bg-[#3A3A3A] flex">
+                                <svg class="my-auto ml-[10px]" xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                    <path d="M13.3039 15.5187L12.7764 11.296C12.7017 10.6979 12.411 10.1477 11.9591 9.74884C11.5071 9.35 10.925 9.13002 10.3223 9.13025H8.50595C7.90346 9.13042 7.32178 9.35058 6.87017 9.74938C6.41857 10.1482 6.12813 10.6982 6.05342 11.296L5.52517 15.5187C5.49618 15.7507 5.51688 15.9862 5.58589 16.2096C5.6549 16.4329 5.77065 16.6391 5.92544 16.8143C6.08024 16.9895 6.27054 17.1298 6.48371 17.2258C6.69688 17.3219 6.92804 17.3714 7.16184 17.3713H11.668C11.9018 17.3713 12.1328 17.3216 12.3459 17.2256C12.559 17.1295 12.7492 16.9892 12.9039 16.814C13.0586 16.6388 13.1742 16.4327 13.2432 16.2094C13.3122 15.986 13.3328 15.7506 13.3039 15.5187V15.5187Z" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.41475 5.8334C10.7802 5.8334 11.8871 4.72651 11.8871 3.3611C11.8871 1.99568 10.7802 0.888794 9.41475 0.888794C8.04933 0.888794 6.94244 1.99568 6.94244 3.3611C6.94244 4.72651 8.04933 5.8334 9.41475 5.8334Z" stroke="white" stroke-width="0.973081"/>
+                                        <path d="M2.822 8.30544C3.73228 8.30544 4.4702 7.56751 4.4702 6.65724C4.4702 5.74696 3.73228 5.00903 2.822 5.00903C1.91172 5.00903 1.1738 5.74696 1.1738 6.65724C1.1738 7.56751 1.91172 8.30544 2.822 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                        <path d="M16.0077 8.30544C16.918 8.30544 17.6559 7.56751 17.6559 6.65724C17.6559 5.74696 16.918 5.00903 16.0077 5.00903C15.0975 5.00903 14.3595 5.74696 14.3595 6.65724C14.3595 7.56751 15.0975 8.30544 16.0077 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                        <path d="M2.82207 10.778H2.56989C2.17973 10.7779 1.80221 10.9163 1.50448 11.1684C1.20675 11.4206 1.00812 11.7702 0.943943 12.155L0.669518 13.8032C0.630136 14.0394 0.642669 14.2813 0.706247 14.5121C0.769825 14.7429 0.88292 14.9571 1.03767 15.1397C1.19241 15.3224 1.3851 15.4692 1.60231 15.5698C1.81953 15.6705 2.05607 15.7226 2.29547 15.7226H5.29437M16.0077 10.778H16.2599C16.65 10.7779 17.0276 10.9163 17.3253 11.1684C17.623 11.4206 17.8216 11.7702 17.8858 12.155L18.1602 13.8032C18.1996 14.0394 18.1871 14.2813 18.1235 14.5121C18.0599 14.7429 17.9468 14.9571 17.7921 15.1397C17.6373 15.3224 17.4447 15.4692 17.2274 15.5698C17.0102 15.6705 16.7737 15.7226 16.5343 15.7226H13.5354" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="my-auto text-xs text-white font-normal ml-[10px]">120+ Views</p>
+                            </div>
+                            <div class="mt-[15px] w-[170px] lg:w-full h-[30px] flex">
+                                <h1 class="my-auto lg:text-2xl text-lg font-bold text-[#3A3A3A] ml-[10px]">Kebun Raya</h1>
+                                <div class="bg-[#3A3A3A] w-[35px] h-[35px] my-auto ml-auto mr-[10px] rounded-full px-2 py-2.5 hidden lg:block">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 25 19" fill="none">
+                                        <path d="M15.4753 0.20392L24.679 9.40762L15.4753 18.6113L13.3278 16.3871L18.7733 10.9416L0.135806 10.9416L0.135806 7.87367L18.7733 7.87367L13.3278 2.42815L15.4753 0.20392Z" fill="#FCFCFC"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="w-[255px] lg:w-[280px] h-[60px] lg:h-[50px] mx-auto mt-[10px] hidden lg:block">
+                                <p class="text-justify ">Bali's hotspot for surfing, sunsets, and vibrant nightlife.</p>
+                            </div>
+                            <div class="w-[255px] lg:w-[280px] h-[40px] mx-auto flex items-center">
+                                <svg class="my-auto" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4.63641 19.054C4.15926 19.2987 3.61782 18.8698 3.71424 18.3222L4.74025 12.4752L0.385285 8.32665C-0.0214085 7.9385 0.189973 7.22895 0.735116 7.15231L6.78979 6.29195L9.48954 0.943117C9.73306 0.461018 10.3919 0.461018 10.6355 0.943117L13.3352 6.29195L19.3899 7.15231C19.935 7.22895 20.1464 7.9385 19.7385 8.32665L15.3848 12.4752L16.4108 18.3222C16.5072 18.8698 15.9657 19.2987 15.4886 19.054L10.0606 16.2652L4.63517 19.054H4.63641Z" fill="#DF6951"/>
+                                </svg>
+                                <p class="my-auto ml-[10px]">5.0</p>
+                            </div>
+                        </div>
+                    </button>
+                <!-- Content-6 -->
+                    
+                </div>
+            </div>
+        </div>
+         <!-- Content Search -->
+    </section>
+    <!-- Hero Section -->
+    <script src="src/script.js"></script>
+</body>
+</html>

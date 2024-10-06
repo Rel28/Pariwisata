@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet">
+</head>
+</head>
+<body class="font-[Poppins]">
+     <!-- NavBar -->
+     <header class=" bg-white border-b fixed border-[#DFDFDF] top-0 left-0 w-full flex items-center z-50">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="content-1.html" class="font-bold text-lg text-black block py-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                            <mask id="mask0_105_175" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="34" height="34">
+                            <rect width="34" height="34" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask0_105_175)">
+                            <path d="M22.6667 31.1667L8.5 17L22.6667 2.83334L25.1813 5.34793L13.5292 17L25.1813 28.6521L22.6667 31.1667Z" fill="black"/>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="index.html" class="text-base text-black py-2 mx-8 flex group-hover:text-gray-500">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="explore.html" class="text-base text-black py-2 mx-8 flex group-hover:text-gray-500">Explore</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about-us" class="text-base text-black py-2 mx-8 flex group-hover:text-gray-500">About Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- NavBar -->
+
+    <!-- Hero Section -->
+    <section id="#home" class="max-w-[1440px] mx-auto pt-[120px] h-[100vh]">
+        <div class="bg-[url('/images/pantai_kuta_bali_1200.jpg')] bg-cover bg-center md:rounded-[20px] h-[80vh] relative">
+            <div class="relative z-10 w-full h-full flex flex-col justify-center text-white md:pl-[40px] text-center items-center md:items-start md:text-left">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4">Gallery of<br>Kuta Beach</h1>
+                <p class="text-sm md:text-lg lg:text-lg mb-6 font-light">See what others discover from this place</p>
+            </div>
+            <div class="absolute inset-0 bg-black opacity-50 md:rounded-[20px]"></div>
+        </div>
+        <!-- Content Search -->
+        <div class="bg-white shadow-custom w-[430px] lg:w-[1250px] h-[110vh] lg:h-[100vh] -mt-[150px] z-60 relative mx-auto lg:rounded-[3px]">
+            <div class="lg:w-[1150px] h-[180vh] lg:h-[180vh] top-[50px] relative mx-auto">
+                <div class="flex flex-wrap items-center justify-evenly gap-[30px] md:gap-[120px] lg:gap-[40px] lg:w-[1150px] lg:h-[70vh] gap-y-10 w-[400px] h-[70vh] mx-auto">
+                    <div class="bg-[url('/images/pantai_kuta_bali_1200.jpg')] bg-cover bg-center lg:w-[300px] lg:h-[300px] w-[150px] h-[150px]"></div>
+                    <div class="bg-[url('/images/kuta-2.jpg')] bg-cover bg-center lg:w-[300px] lg:h-[300px] w-[150px] h-[150px]"></div>
+                    <div class="bg-[url('/images/kuta-3.jpg')] bg-cover bg-center lg:w-[300px] lg:h-[300px] w-[150px] h-[150px]"></div>
+                    <div class="bg-[url('/images/kuta-4.jpg')] bg-cover bg-center lg:w-[300px] lg:h-[300px] w-[150px] h-[150px]"></div>
+                    <div class="bg-[url('/images/bali-indonesia.jpg')] bg-cover bg-center lg:w-[300px] lg:h-[300px] w-[150px] h-[150px]"></div>
+                    <div class="bg-[url('/images/bali-indonesia.jpg')] bg-cover bg-center lg:w-[300px] lg:h-[300px] w-[150px] h-[150px]"></div>
+                </div>
+            </div>
+        </div>
+         <!-- Content Search -->
+    </section>
+    <!-- Hero Section -->
+    <script src="src/script.js"></script>
+</body>
+</html>

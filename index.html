@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WanderWhisper is your guide to exploring Bali's top tourist destinations. Discover hidden gems, beaches, cultural sites, and travel tips tailored for every traveler.">
+    <meta name="keywords" content="Bali tourism, Bali travel guide, Bali beaches, Bali cultural sites, hidden gems in Bali, WanderWhisper, Bali attractions, Bali travel tips">
+    <title>Wanderer Whisper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet">
+</head>
+<body class="font-[Poppins]">
+    <!-- NavBar -->
+    <header class=" bg-white border-b fixed border-[#DFDFDF] top-0 left-0 w-full flex items-center z-50">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-black block py-6">WanderWhisper</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-black py-2 mx-8 flex group-hover:text-gray-500">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="explore.html" class="text-base text-black py-2 mx-8 flex group-hover:text-gray-500">Explore</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about-us" class="text-base text-black py-2 mx-8 flex group-hover:text-gray-500">About Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- NavBar -->
+
+    <!-- Hero Section -->
+    <section id="#home" class="max-w-[1440px] mx-auto pt-[120px] h-[90vh]">
+        <div class="bg-[url('/images/bali-indonesia.jpg')] bg-cover bg-center md:rounded-[20px] h-full relative">
+            <div class="relative z-10 w-full h-full flex flex-col justify-center text-white md:pl-[40px] text-center items-center md:items-start md:text-left">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4">Explore Bali's <br>Magical Places</h1>
+                <p class="text-sm md:text-lg lg:text-lg mb-6 font-light">A place where nature and adventure unite</p>
+                <a href="#explore" class="bg-white w-[150px] text-black font-bold py-2 px-6 rounded-full">Search Now</a>
+            </div>
+            <div class="absolute inset-0 bg-black opacity-50 md:rounded-[20px]"></div>
+        </div>
+    </section>
+    <!-- Hero Section -->
+    
+    <!-- Category Section -->
+    <section class="max-w-[1440px] mx-auto pt-[120px] h-[150vh] md:h-[70vh] lg:h-[80vh]">
+        <h1 class="text-4xl md:text-5xl lg:text-5xl font-semibold text-center">Category</h1>
+        <p class="text-sm md:text-lg lg:text-lg text-center text-[#A2A2A2] leading-[30px] md:leading-[40px] lg:leading-[50px]">What do we offer?</p>
+        <div class="flex flex-col md:flex-row items-center justify-evenly gap-[30px] md:gap-[120px] lg:gap-[150px] pt-10">
+            <div class="w-[250px] lg:w-[300px] h-[300px]">
+                <div class="w-[150px] h-[150px] lg:w-[200px] lg:h-[200px] bg-[#F7F7F7] px-[80px] rounded-full flex items-center justify-center mx-auto">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 197 197" fill="none">
+                            <mask id="mask0_70_3" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="197" height="197">
+                            <rect width="197" height="197" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask0_70_3)">
+                            <path d="M49.25 123.125H106.708L123.125 106.708H49.25V123.125ZM49.25 90.2916H98.4999V73.875H49.25V90.2916ZM32.8333 57.4583V139.542H90.2916L73.875 155.958H16.4166V41.0416H180.583V65.6666H164.167V57.4583H32.8333ZM187.971 100.962C188.655 101.646 188.997 102.399 188.997 103.22C188.997 104.041 188.655 104.793 187.971 105.477L180.583 112.865L166.219 98.5L173.606 91.1125C174.29 90.4284 175.043 90.0864 175.863 90.0864C176.684 90.0864 177.437 90.4284 178.121 91.1125L187.971 100.962ZM106.708 172.375V158.01L161.294 103.425L175.658 117.79L121.073 172.375H106.708Z" fill="#B1B1B1"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <h1 class="text-center text-lg lg:text-2xl font-semibold mt-[20px] lg:mt-[30px]">Complete Information</h1>
+                <p class="text-[#A4A4A4] text-sm text-center mt-[10px] lg:mt-[20px]">Our system provide complete information about the place for you, so you would know.</p>
+            </div>
+            <div class="w-[250px] lg:w-[300px] h-[300px]">
+                <div class="w-[150px] h-[150px] lg:w-[200px] lg:h-[200px] bg-[#F7F7F7] px-[80px] rounded-full flex items-center justify-center mx-auto">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74" fill="none">
+                            <mask id="mask0_66_195" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="74" height="74">
+                            <rect width="74" height="74" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask0_66_195)">
+                            <path d="M33.9167 55.5C39.8778 55.5 44.9653 53.4059 49.1792 49.2177C53.3931 45.0295 55.5 39.9292 55.5 33.9167C55.5 27.9556 53.3931 22.8681 49.1792 18.6542C44.9653 14.4403 39.8778 12.3334 33.9167 12.3334C27.9042 12.3334 22.8038 14.4403 18.6156 18.6542C14.4274 22.8681 12.3333 27.9556 12.3333 33.9167C12.3333 39.9292 14.4274 45.0295 18.6156 49.2177C22.8038 53.4059 27.9042 55.5 33.9167 55.5ZM33.9167 46.25C29.6514 46.25 25.8615 45.1066 22.5469 42.8198C19.2323 40.533 16.8556 37.5653 15.4167 33.9167C16.8556 30.3195 19.2323 27.3646 22.5469 25.0521C25.8615 22.7396 29.6514 21.5834 33.9167 21.5834C38.1306 21.5834 41.8948 22.7396 45.2094 25.0521C48.524 27.3646 50.9264 30.3195 52.4167 33.9167C50.9264 37.5653 48.524 40.533 45.2094 42.8198C41.8948 45.1066 38.1306 46.25 33.9167 46.25ZM33.9167 41.625C36.7431 41.625 39.3382 40.9441 41.7021 39.5823C44.066 38.2205 45.916 36.332 47.2521 33.9167C45.916 31.5528 44.066 29.6771 41.7021 28.2896C39.3382 26.9021 36.7431 26.2084 33.9167 26.2084C31.0389 26.2084 28.4181 26.9021 26.0542 28.2896C23.6903 29.6771 21.8403 31.5528 20.5042 33.9167C21.8403 36.332 23.6903 38.2205 26.0542 39.5823C28.4181 40.9441 31.0389 41.625 33.9167 41.625ZM33.9167 38.5417C35.2014 38.5417 36.2934 38.1049 37.1927 37.2313C38.092 36.3577 38.5417 35.2528 38.5417 33.9167C38.5417 32.632 38.092 31.54 37.1927 30.6406C36.2934 29.7413 35.2014 29.2917 33.9167 29.2917C32.5806 29.2917 31.4757 29.7413 30.6021 30.6406C29.7285 31.54 29.2917 32.632 29.2917 33.9167C29.2917 35.2528 29.7285 36.3577 30.6021 37.2313C31.4757 38.1049 32.5806 38.5417 33.9167 38.5417ZM33.9167 61.6667C30.0625 61.6667 26.4524 60.9344 23.0865 59.4698C19.7205 58.0052 16.7913 56.0268 14.299 53.5344C11.8066 51.042 9.82813 48.1129 8.36355 44.7469C6.89896 41.3809 6.16667 37.7709 6.16667 33.9167C6.16667 30.1139 6.89896 26.5295 8.36355 23.1636C9.82813 19.7976 11.8066 16.8556 14.299 14.3375C16.7913 11.8195 19.7205 9.82815 23.0865 8.36356C26.4524 6.89898 30.0625 6.16669 33.9167 6.16669C37.7195 6.16669 41.3038 6.89898 44.6698 8.36356C48.0358 9.82815 50.9778 11.8195 53.4958 14.3375C56.0139 16.8556 58.0052 19.7976 59.4698 23.1636C60.9344 26.5295 61.6667 30.1139 61.6667 33.9167C61.6667 37.2056 61.1271 40.3146 60.0479 43.2438C58.9688 46.1729 57.4785 48.8452 55.5771 51.2604L67.8333 63.5167L63.4396 67.8334L51.1833 55.6542C48.7681 57.5556 46.0958 59.033 43.1667 60.0865C40.2375 61.14 37.1542 61.6667 33.9167 61.6667Z" fill="#B1B1B1"/>
+                            </g>
+                            </svg>
+                    </div>
+                </div>
+                <h1 class="text-center text-lg lg:text-2xl font-semibold mt-[20px] lg:mt-[30px]">Detailed Search</h1>
+                <p class="text-[#A4A4A4] text-sm text-center mt-[10px] lg:mt-[20px]">Our system has many categories in its search place, so you can search easily.</p>
+            </div>
+            <div class="w-[300px] h-[300px]">
+                <div class="w-[150px] h-[150px] lg:w-[200px] lg:h-[200px] bg-[#F7F7F7] px-[80px] rounded-full flex items-center justify-center mx-auto">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74" fill="none">
+                            <mask id="mask0_66_207" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="74" height="74">
+                            <rect width="74" height="74" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask0_66_207)">
+                            <path d="M37 67.8333C28.7264 60.793 22.5469 54.2538 18.4615 48.2156C14.3761 42.1774 12.3334 36.5889 12.3334 31.45C12.3334 23.7417 14.8129 17.6007 19.7719 13.0271C24.7309 8.45347 30.4737 6.16667 37 6.16667H38.5417C39.0556 6.16667 39.5695 6.21805 40.0834 6.32083V12.5646C39.5695 12.4618 39.0684 12.3976 38.5802 12.3719C38.0921 12.3462 37.5653 12.3333 37 12.3333C31.8098 12.3333 27.4289 14.1191 23.8573 17.6906C20.2858 21.2622 18.5 25.8486 18.5 31.45C18.5 35.0986 20.016 39.274 23.048 43.976C26.0799 48.6781 30.7306 53.9069 37 59.6625C43.2695 53.9069 47.9202 48.6781 50.9521 43.976C53.9841 39.274 55.5 35.0986 55.5 31.45V30.8333H61.6667V31.45C61.6667 36.5889 59.624 42.1774 55.5386 48.2156C51.4532 54.2538 45.2737 60.793 37 67.8333ZM37 37C38.6959 37 40.1476 36.3962 41.3553 35.1885C42.5629 33.9809 43.1667 32.5292 43.1667 30.8333C43.1667 29.1375 42.5629 27.6858 41.3553 26.4781C40.1476 25.2705 38.6959 24.6667 37 24.6667C35.3042 24.6667 33.8525 25.2705 32.6448 26.4781C31.4372 27.6858 30.8334 29.1375 30.8334 30.8333C30.8334 32.5292 31.4372 33.9809 32.6448 35.1885C33.8525 36.3962 35.3042 37 37 37ZM55.5 24.6667H61.6667V15.4167H70.9167V9.25H61.6667V0H55.5V9.25H46.25V15.4167H55.5V24.6667Z" fill="#B1B1B1"/>
+                            </g>
+                            </svg>
+                    </div>
+                </div>
+                <h1 class="text-center text-lg lg:text-2xl font-semibold mt-[20px] lg:mt-[30px]">Many Places</h1>
+                <p class="text-[#A4A4A4] text-sm text-center mt-[10px] lg:mt-[20px]">Our system has over 1,000 places in its database</p>
+            </div>
+        </div>
+    </section>
+    <!-- Category Section -->
+
+    <!-- Content Section -->
+        <section class="max-w-[1440px] mx-auto pt-[120px] h-[270vh] lg:h-[160vh] ">
+            <h1 class="text-4xl md:text-5xl lg:text-5xl font-semibold text-center">Choose your tour!</h1>
+            <p class="text-sm md:text-lg lg:text-lg text-center text-[#A2A2A2] leading-[30px] md:leading-[40px] lg:leading-[50px]">See the information of your place</p>
+            <div class="flex flex-col lg:flex-row items-center justify-evenly gap-[30px] md:gap-[120px] lg:gap-[100px] pt-10">
+                <button id="#content-1" name="Pantai-Kuta" type="button" class="bg-white w-[320px] lg:w-[450px] h-[550px] lg:h-[600px] shadow-custom rounded-[20px]">
+                    <div class="w-[280px] lg:w-[370px] h-[510px] lg:h-[550px] mx-auto">
+                        <div class="bg-[url('/images/pantai_kuta_bali_1200.jpg')] w-full h-[270px] rounded-custom bg-cover bg-center"></div>
+                        <div class="w-full h-[45px] bg-[#3A3A3A] flex">
+                            <svg class="my-auto ml-[10px]" xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                <path d="M13.3039 15.5187L12.7764 11.296C12.7017 10.6979 12.411 10.1477 11.9591 9.74884C11.5071 9.35 10.925 9.13002 10.3223 9.13025H8.50595C7.90346 9.13042 7.32178 9.35058 6.87017 9.74938C6.41857 10.1482 6.12813 10.6982 6.05342 11.296L5.52517 15.5187C5.49618 15.7507 5.51688 15.9862 5.58589 16.2096C5.6549 16.4329 5.77065 16.6391 5.92544 16.8143C6.08024 16.9895 6.27054 17.1298 6.48371 17.2258C6.69688 17.3219 6.92804 17.3714 7.16184 17.3713H11.668C11.9018 17.3713 12.1328 17.3216 12.3459 17.2256C12.559 17.1295 12.7492 16.9892 12.9039 16.814C13.0586 16.6388 13.1742 16.4327 13.2432 16.2094C13.3122 15.986 13.3328 15.7506 13.3039 15.5187V15.5187Z" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.41475 5.8334C10.7802 5.8334 11.8871 4.72651 11.8871 3.3611C11.8871 1.99568 10.7802 0.888794 9.41475 0.888794C8.04933 0.888794 6.94244 1.99568 6.94244 3.3611C6.94244 4.72651 8.04933 5.8334 9.41475 5.8334Z" stroke="white" stroke-width="0.973081"/>
+                                    <path d="M2.822 8.30544C3.73228 8.30544 4.4702 7.56751 4.4702 6.65724C4.4702 5.74696 3.73228 5.00903 2.822 5.00903C1.91172 5.00903 1.1738 5.74696 1.1738 6.65724C1.1738 7.56751 1.91172 8.30544 2.822 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                    <path d="M16.0077 8.30544C16.918 8.30544 17.6559 7.56751 17.6559 6.65724C17.6559 5.74696 16.918 5.00903 16.0077 5.00903C15.0975 5.00903 14.3595 5.74696 14.3595 6.65724C14.3595 7.56751 15.0975 8.30544 16.0077 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                    <path d="M2.82207 10.778H2.56989C2.17973 10.7779 1.80221 10.9163 1.50448 11.1684C1.20675 11.4206 1.00812 11.7702 0.943943 12.155L0.669518 13.8032C0.630136 14.0394 0.642669 14.2813 0.706247 14.5121C0.769825 14.7429 0.88292 14.9571 1.03767 15.1397C1.19241 15.3224 1.3851 15.4692 1.60231 15.5698C1.81953 15.6705 2.05607 15.7226 2.29547 15.7226H5.29437M16.0077 10.778H16.2599C16.65 10.7779 17.0276 10.9163 17.3253 11.1684C17.623 11.4206 17.8216 11.7702 17.8858 12.155L18.1602 13.8032C18.1996 14.0394 18.1871 14.2813 18.1235 14.5121C18.0599 14.7429 17.9468 14.9571 17.7921 15.1397C17.6373 15.3224 17.4447 15.4692 17.2274 15.5698C17.0102 15.6705 16.7737 15.7226 16.5343 15.7226H13.5354" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="my-auto text-xs text-white font-normal ml-[10px]">120+ Views</p>
+                        </div>
+                        <div class="mt-[15px] w-full h-[70px] flex">
+                            <h1 class="my-auto lg:text-3xl text-2xl font-bold text-[#3A3A3A] ml-[10px]">Kuta Beach</h1>
+                            <div class="bg-[#3A3A3A] w-[40px] h-[40px] my-auto ml-auto mr-[10px] rounded-full flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="19" viewBox="0 0 25 19" fill="none">
+                                    <path d="M15.4753 0.20392L24.679 9.40762L15.4753 18.6113L13.3278 16.3871L18.7733 10.9416L0.135806 10.9416L0.135806 7.87367L18.7733 7.87367L13.3278 2.42815L15.4753 0.20392Z" fill="#FCFCFC"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="w-[255px] lg:w-[350px] h-[60px] lg:h-[80px] mx-auto mt-[10px]">
+                            <p class="text-justify ">Bali's hotspot for surfing, sunsets, and vibrant nightlife.</p>
+                        </div>
+                        <div class="w-[255px] lg:w-[370px] h-[40px] mx-auto flex items-center">
+                            <svg class="my-auto" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.63641 19.054C4.15926 19.2987 3.61782 18.8698 3.71424 18.3222L4.74025 12.4752L0.385285 8.32665C-0.0214085 7.9385 0.189973 7.22895 0.735116 7.15231L6.78979 6.29195L9.48954 0.943117C9.73306 0.461018 10.3919 0.461018 10.6355 0.943117L13.3352 6.29195L19.3899 7.15231C19.935 7.22895 20.1464 7.9385 19.7385 8.32665L15.3848 12.4752L16.4108 18.3222C16.5072 18.8698 15.9657 19.2987 15.4886 19.054L10.0606 16.2652L4.63517 19.054H4.63641Z" fill="#DF6951"/>
+                            </svg>
+                            <p class="my-auto ml-[10px]">5.0</p>
+                        </div>
+                    </div>
+                </button>
+                <button id="#content-1" name="Pantai-Kuta" type="button" class="bg-white w-[320px] lg:w-[450px] h-[550px] lg:h-[600px] shadow-custom rounded-[20px]">
+                    <div class="w-[280px] lg:w-[370px] h-[510px] lg:h-[550px] mx-auto">
+                        <div class="bg-[url('/images/images.jpg')] w-full h-[270px] rounded-custom bg-cover bg-center"></div>
+                        <div class="w-full h-[45px] bg-[#3A3A3A] flex">
+                            <svg class="my-auto ml-[10px]" xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                <path d="M13.3039 15.5187L12.7764 11.296C12.7017 10.6979 12.411 10.1477 11.9591 9.74884C11.5071 9.35 10.925 9.13002 10.3223 9.13025H8.50595C7.90346 9.13042 7.32178 9.35058 6.87017 9.74938C6.41857 10.1482 6.12813 10.6982 6.05342 11.296L5.52517 15.5187C5.49618 15.7507 5.51688 15.9862 5.58589 16.2096C5.6549 16.4329 5.77065 16.6391 5.92544 16.8143C6.08024 16.9895 6.27054 17.1298 6.48371 17.2258C6.69688 17.3219 6.92804 17.3714 7.16184 17.3713H11.668C11.9018 17.3713 12.1328 17.3216 12.3459 17.2256C12.559 17.1295 12.7492 16.9892 12.9039 16.814C13.0586 16.6388 13.1742 16.4327 13.2432 16.2094C13.3122 15.986 13.3328 15.7506 13.3039 15.5187V15.5187Z" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.41475 5.8334C10.7802 5.8334 11.8871 4.72651 11.8871 3.3611C11.8871 1.99568 10.7802 0.888794 9.41475 0.888794C8.04933 0.888794 6.94244 1.99568 6.94244 3.3611C6.94244 4.72651 8.04933 5.8334 9.41475 5.8334Z" stroke="white" stroke-width="0.973081"/>
+                                    <path d="M2.822 8.30544C3.73228 8.30544 4.4702 7.56751 4.4702 6.65724C4.4702 5.74696 3.73228 5.00903 2.822 5.00903C1.91172 5.00903 1.1738 5.74696 1.1738 6.65724C1.1738 7.56751 1.91172 8.30544 2.822 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                    <path d="M16.0077 8.30544C16.918 8.30544 17.6559 7.56751 17.6559 6.65724C17.6559 5.74696 16.918 5.00903 16.0077 5.00903C15.0975 5.00903 14.3595 5.74696 14.3595 6.65724C14.3595 7.56751 15.0975 8.30544 16.0077 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                    <path d="M2.82207 10.778H2.56989C2.17973 10.7779 1.80221 10.9163 1.50448 11.1684C1.20675 11.4206 1.00812 11.7702 0.943943 12.155L0.669518 13.8032C0.630136 14.0394 0.642669 14.2813 0.706247 14.5121C0.769825 14.7429 0.88292 14.9571 1.03767 15.1397C1.19241 15.3224 1.3851 15.4692 1.60231 15.5698C1.81953 15.6705 2.05607 15.7226 2.29547 15.7226H5.29437M16.0077 10.778H16.2599C16.65 10.7779 17.0276 10.9163 17.3253 11.1684C17.623 11.4206 17.8216 11.7702 17.8858 12.155L18.1602 13.8032C18.1996 14.0394 18.1871 14.2813 18.1235 14.5121C18.0599 14.7429 17.9468 14.9571 17.7921 15.1397C17.6373 15.3224 17.4447 15.4692 17.2274 15.5698C17.0102 15.6705 16.7737 15.7226 16.5343 15.7226H13.5354" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="my-auto text-xs text-white font-normal ml-[10px]">120+ Views</p>
+                        </div>
+                        <div class="mt-[15px] w-full h-[70px] flex">
+                            <h1 class="my-auto lg:text-3xl text-2xl font-bold text-[#3A3A3A] ml-[10px]">Monkey Forest</h1>
+                            <div class="bg-[#3A3A3A] w-[40px] h-[40px] my-auto ml-auto mr-[10px] rounded-full flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="19" viewBox="0 0 25 19" fill="none">
+                                    <path d="M15.4753 0.20392L24.679 9.40762L15.4753 18.6113L13.3278 16.3871L18.7733 10.9416L0.135806 10.9416L0.135806 7.87367L18.7733 7.87367L13.3278 2.42815L15.4753 0.20392Z" fill="#FCFCFC"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="w-[255px] lg:w-[350px] h-[60px] lg:h-[80px] mx-auto mt-[10px]">
+                            <p class="text-justify ">Bali's hotspot for surfing, sunsets, and vibrant nightlife.</p>
+                        </div>
+                        <div class="w-[255px] lg:w-[370px] h-[40px] mx-auto flex items-center">
+                            <svg class="my-auto" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.63641 19.054C4.15926 19.2987 3.61782 18.8698 3.71424 18.3222L4.74025 12.4752L0.385285 8.32665C-0.0214085 7.9385 0.189973 7.22895 0.735116 7.15231L6.78979 6.29195L9.48954 0.943117C9.73306 0.461018 10.3919 0.461018 10.6355 0.943117L13.3352 6.29195L19.3899 7.15231C19.935 7.22895 20.1464 7.9385 19.7385 8.32665L15.3848 12.4752L16.4108 18.3222C16.5072 18.8698 15.9657 19.2987 15.4886 19.054L10.0606 16.2652L4.63517 19.054H4.63641Z" fill="#DF6951"/>
+                            </svg>
+                            <p class="my-auto ml-[10px]">5.0</p>
+                        </div>
+                    </div>
+                </button>
+                <button id="#content-1" name="Pantai-Kuta" type="button" class="bg-white w-[320px] lg:w-[450px] h-[550px] lg:h-[600px] shadow-custom rounded-[20px]">
+                    <div class="w-[280px] lg:w-[370px] h-[510px] lg:h-[550px] mx-auto">
+                        <div class="bg-[url('/images/gitgit-waterfall.jpg')] w-full h-[270px] rounded-custom bg-cover bg-center"></div>
+                        <div class="w-full h-[45px] bg-[#3A3A3A] flex">
+                            <svg class="my-auto ml-[10px]" xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                <path d="M13.3039 15.5187L12.7764 11.296C12.7017 10.6979 12.411 10.1477 11.9591 9.74884C11.5071 9.35 10.925 9.13002 10.3223 9.13025H8.50595C7.90346 9.13042 7.32178 9.35058 6.87017 9.74938C6.41857 10.1482 6.12813 10.6982 6.05342 11.296L5.52517 15.5187C5.49618 15.7507 5.51688 15.9862 5.58589 16.2096C5.6549 16.4329 5.77065 16.6391 5.92544 16.8143C6.08024 16.9895 6.27054 17.1298 6.48371 17.2258C6.69688 17.3219 6.92804 17.3714 7.16184 17.3713H11.668C11.9018 17.3713 12.1328 17.3216 12.3459 17.2256C12.559 17.1295 12.7492 16.9892 12.9039 16.814C13.0586 16.6388 13.1742 16.4327 13.2432 16.2094C13.3122 15.986 13.3328 15.7506 13.3039 15.5187V15.5187Z" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.41475 5.8334C10.7802 5.8334 11.8871 4.72651 11.8871 3.3611C11.8871 1.99568 10.7802 0.888794 9.41475 0.888794C8.04933 0.888794 6.94244 1.99568 6.94244 3.3611C6.94244 4.72651 8.04933 5.8334 9.41475 5.8334Z" stroke="white" stroke-width="0.973081"/>
+                                    <path d="M2.822 8.30544C3.73228 8.30544 4.4702 7.56751 4.4702 6.65724C4.4702 5.74696 3.73228 5.00903 2.822 5.00903C1.91172 5.00903 1.1738 5.74696 1.1738 6.65724C1.1738 7.56751 1.91172 8.30544 2.822 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                    <path d="M16.0077 8.30544C16.918 8.30544 17.6559 7.56751 17.6559 6.65724C17.6559 5.74696 16.918 5.00903 16.0077 5.00903C15.0975 5.00903 14.3595 5.74696 14.3595 6.65724C14.3595 7.56751 15.0975 8.30544 16.0077 8.30544Z" stroke="white" stroke-width="0.973081"/>
+                                    <path d="M2.82207 10.778H2.56989C2.17973 10.7779 1.80221 10.9163 1.50448 11.1684C1.20675 11.4206 1.00812 11.7702 0.943943 12.155L0.669518 13.8032C0.630136 14.0394 0.642669 14.2813 0.706247 14.5121C0.769825 14.7429 0.88292 14.9571 1.03767 15.1397C1.19241 15.3224 1.3851 15.4692 1.60231 15.5698C1.81953 15.6705 2.05607 15.7226 2.29547 15.7226H5.29437M16.0077 10.778H16.2599C16.65 10.7779 17.0276 10.9163 17.3253 11.1684C17.623 11.4206 17.8216 11.7702 17.8858 12.155L18.1602 13.8032C18.1996 14.0394 18.1871 14.2813 18.1235 14.5121C18.0599 14.7429 17.9468 14.9571 17.7921 15.1397C17.6373 15.3224 17.4447 15.4692 17.2274 15.5698C17.0102 15.6705 16.7737 15.7226 16.5343 15.7226H13.5354" stroke="white" stroke-width="0.973081" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="my-auto text-xs text-white font-normal ml-[10px]">120+ Views</p>
+                        </div>
+                        <div class="mt-[15px] w-full h-[70px] flex">
+                            <h1 class="my-auto lg:text-3xl text-2xl font-bold text-[#3A3A3A] ml-[10px]">Gitgit Waterfall</h1>
+                            <div class="bg-[#3A3A3A] w-[40px] h-[40px] my-auto ml-auto mr-[10px] rounded-full flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="19" viewBox="0 0 25 19" fill="none">
+                                    <path d="M15.4753 0.20392L24.679 9.40762L15.4753 18.6113L13.3278 16.3871L18.7733 10.9416L0.135806 10.9416L0.135806 7.87367L18.7733 7.87367L13.3278 2.42815L15.4753 0.20392Z" fill="#FCFCFC"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="w-[255px] lg:w-[350px] h-[60px] lg:h-[80px] mx-auto mt-[10px]">
+                            <p class="text-justify ">Bali's hotspot for surfing, sunsets, and vibrant nightlife.</p>
+                        </div>
+                        <div class="w-[255px] lg:w-[370px] h-[40px] mx-auto flex items-center">
+                            <svg class="my-auto" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.63641 19.054C4.15926 19.2987 3.61782 18.8698 3.71424 18.3222L4.74025 12.4752L0.385285 8.32665C-0.0214085 7.9385 0.189973 7.22895 0.735116 7.15231L6.78979 6.29195L9.48954 0.943117C9.73306 0.461018 10.3919 0.461018 10.6355 0.943117L13.3352 6.29195L19.3899 7.15231C19.935 7.22895 20.1464 7.9385 19.7385 8.32665L15.3848 12.4752L16.4108 18.3222C16.5072 18.8698 15.9657 19.2987 15.4886 19.054L10.0606 16.2652L4.63517 19.054H4.63641Z" fill="#DF6951"/>
+                            </svg>
+                            <p class="my-auto ml-[10px]">5.0</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="w-full h-[70px] flex items-center justify-center mt-[50px] lg:mt-[80px]">
+                <a href="#explore" class="bg-[#3A3A3A] w-[250px] h-[70px] font-bold rounded-full flex items-center justify-center text-white">See More</a>
+            </div>
+        </section>
+    <!-- Recommended Place -->
+
+    <!-- Footer -->
+    <footer class="mt-24">
+        <div
+          class="mx-auto max-w-[1536px] bg-[#3A3A3A] grid col-span-1 md:col-span-6 lg:grid-cols-12 gap-6 justify-between py-4 px-6 md:px-10 md:py-6 lg:px-20 lg:py-12 text-white"
+        >
+          <div class="col-span-6 flex flex-col gap-6">
+            <figure class="flex items-center gap-2">
+              <figcaption class="uppercase text-xl font-bold">
+                <span class="text-white">WanderWhisper
+              </figcaption>
+            </figure>
+            <div class="lg:w-3/4">
+              <p class="text-sm leading-normal text-pretty">
+                WanderWhisper is a website that provides curated information on Bali's top tourist destinations. It offers recommendations, travel tips, and guides to beaches, cultural sites, and hidden gems, helping travelers explore Bali with ease.
+              </p>
+            </div>
+            <div class="flex gap-4 mt-2">
+              <a href="#youtube">
+                <img
+                  src="/images/yt.png"
+                  alt="logo-yotube"
+                  width="36px"
+                />
+              </a>
+              <a href="#linkedin">
+                <img
+                  src="/images/linkedIn.png"
+                  alt="logo-linkedin"
+                  width="36px"
+                />
+              </a>
+              <a href="#instagram">
+                <img
+                  src="/images/ig.png"
+                  alt="logo-instagram"
+                  width="36px"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-span-6 md:col-span-3">
+            <div>
+              <p class="text-xl font-bold">Navigasi</p>
+            </div>
+            <ul class="mt-2 font-light flex flex-col gap-1.5 text-sm">
+              <li>
+                <a
+                  href="{{route('home')}}"
+                  class="hover:underline hover:underline-offset-4"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{{route('index.profilHimpunan')}}"
+                  class="hover:underline hover:underline-offset-4"
+                  >Explore</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{{route('index.news')}}"
+                  class="hover:underline hover:underline-offset-4"
+                  >About Us</a
+                >
+            </ul>
+          </div>
+          <div class="col-span-6 md:col-span-3">
+            <div>
+              <p class="text-xl font-bold">Send Comment</p>
+            </div>
+            <textarea class="w-[300px] h-[80px] bg-white mt-[10px] p-2 border border-gray-300 rounded text-black" placeholder="Enter your comment"></textarea>
+            <button type="submit" class=" w-[150px] h-[40px] bg-black rounded-[10px] mt-[10px]">Submit</button>
+          </div>
+        </div>
+      </footer>
+    <!-- Footer -->
+    <script src="src/script.js"></script>
+</body>
+</html>

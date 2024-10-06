@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+    <link href="../src/output.css" rel="stylesheet">
+</head>
+</head>
+<body class="font-[Poppins]">
+     <!-- NavBar -->
+     <header class=" bg-white border-b fixed border-[#DFDFDF] top-0 left-0 w-full flex items-center z-50">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="explore.html" class="font-bold text-lg text-black block py-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                            <mask id="mask0_105_175" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="34" height="34">
+                            <rect width="34" height="34" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask0_105_175)">
+                            <path d="M22.6667 31.1667L8.5 17L22.6667 2.83334L25.1813 5.34793L13.5292 17L25.1813 28.6521L22.6667 31.1667Z" fill="black"/>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="index.html" class="text-base text-black py-2 mx-8 flex group-hover:text-gray-500">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="../explore.html" class="text-base text-black py-2 mx-8 flex group-hover:text-gray-500">Explore</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about-us" class="text-base text-black py-2 mx-8 flex group-hover:text-gray-500">About Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- NavBar -->
+
+    <!-- Hero Section -->
+    <section id="#home" class="max-w-[1440px] mx-auto pt-[120px] h-200vh]">
+        <div class="bg-[url('/images/pantai_kuta_bali_1200.jpg')] bg-cover bg-center md:rounded-[20px] h-[80vh] relative">
+            <div class="absolute inset-0 bg-black opacity-50 md:rounded-[20px]"></div>
+        </div>
+
+        <!-- Content Search -->
+        <div class="bg-white shadow-custom w-[430px] lg:w-[1250px] h-[200vh] lg:h-[200vh] -mt-[150px] z-60 relative mx-auto lg:rounded-[3px]">
+            <div class="w-[390px] lg:w-[1150px] h-[270px] lg:h-[180px] lg:pt-10 flex items-center mx-auto pb-[150px] lg:pb-0">
+                <div class=" w-[200px] lg:w-[300px] h-[50px] lg:h-[130px]">
+                    <h1 class="text-5xl font-bold text-[#3A3A3A]">Kuta Beach</h1>
+                    <div class="flex w-[350px] h-[60px]">
+                        <svg class="mt-[10px]" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                            <g clip-path="url(#clip0_14_4730)">
+                            <path d="M5.5618 21.3307C5.03544 21.6007 4.43817 21.1275 4.54453 20.5234L5.67635 14.0734L0.872256 9.49708C0.42362 9.0689 0.656802 8.28617 1.25817 8.20163L7.93726 7.25253L10.9154 1.35208C11.1841 0.820262 11.9109 0.820262 12.1795 1.35208L15.1577 7.25253L21.8368 8.20163C22.4382 8.28617 22.6713 9.0689 22.2213 9.49708L17.4186 14.0734L18.5504 20.5234C18.6568 21.1275 18.0595 21.6007 17.5332 21.3307L11.5454 18.2544L5.56044 21.3307H5.5618Z" fill="#FFBA0A"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_14_4730">
+                            <rect width="21.8182" height="21.8182" fill="white" transform="translate(0.63623 0.272736)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <p class="mt-[10px] ml-[10px]">5.0</p>
+                        <p class="mt-[10px] ml-[20px] text-lg font-semibold text-[#5E6282]">(2.3k Reviews)</p>
+                    </div>
+                    <button type="button" class="w-[250px] h-[60px] bg-blue-500 text-white rounded-[10px] mb-[20px] lg:hidden">
+                        Open in Google Maps
+                    </button>
+                </div>
+                <button type="button" class="w-[200px] h-[60px] bg-blue-500 ml-auto text-white rounded-[10px] mb-[50px] hidden lg:block">
+                    Open in Google Maps
+                </button>
+            </div>
+            <div class="bg-[#F2F2F2] w-[390px] lg:w-[1150px] h-[310px] lg:h-[230px] mx-auto pt-5 px-5">
+                <p class="font-semibold lg:text-2xl">Description</p>
+                <p class="text-sm lg:text-lg text-[#727272] mt-[5px] lg:mt-[10px]">Kuta Beach, located on the southwestern coast of Bali, Indonesia, is one of the island's most famous and vibrant beaches. Known for its golden sands, warm tropical waters, and stunning sunsets, Kuta is a hub for surfers and beachgoers alike. The beach stretches over a long expanse, providing ample space for sunbathing, swimming, and other leisure activities. Kuta Beach is also lined with numerous cafes, restaurants, and bars, making it a lively spot both day and night. It’s a favorite destination for tourists seeking a mix of natural beauty and vibrant nightlife.</p>
+            </div>
+            <div class="bg-white w-[390px] lg:w-[1150px] h-[120px] lg:h-[120px] mx-auto pt-5 px-5">
+                <p class="font-semibold lg:text-2xl">Location</p>
+                <p class="text-sm lg:text-lg text-[#727272] mt-[5px] lg:mt-[10px]">Jalan Pantai Kuta, Kuta, Kecamatan Kuta, Kabupaten Badung, Bali, Indonesia 80361</p>
+            </div>
+            <div class="bg-[#F2F2F2] w-[390px] lg:w-[1150px] h-[120px] lg:h-[120px] mx-auto pt-5 px-5">
+                <p class="font-semibold lg:text-2xl">Enter Price</p>
+                <p class="text-sm lg:text-lg text-[#727272] mt-[5px] lg:mt-[10px]">Rp 2.000,00 - Rp 5.000,00</p>
+            </div>
+            <div class="bg-white w-[390px] lg:w-[1150px] h-[120px] lg:h-[120px] mx-auto pt-5 px-5">
+                <p class="font-semibold lg:text-2xl">Contact</p>
+                <p class="text-sm lg:text-lg text-[#727272] mt-[5px] lg:mt-[10px]">-</p>
+            </div>
+            <div class="bg-[#F2F2F2] w-[390px] lg:w-[1150px] h-[120px] lg:h-[120px] mx-auto pt-5 px-5">
+                <p class="font-semibold lg:text-2xl">Open Time</p>
+                <p class="text-sm lg:text-lg text-[#727272] mt-[5px] lg:mt-[10px]">Always Open</p>
+            </div>
+            <div class="w-[390px] lg:w-[1150px] h-[310px] lg:h-[500px] mx-auto mt-[20px] lg:mt-[50px]">
+                <h1 class="text-4xl font-semibold">Gallery</h1>
+                <div class="flex flex-row justify-evenly gap-[30px] md:gap-[120px] lg:gap-[50px] lg:w-[1150px] lg:h-[380px] gap-y-10 w-[390px] h-[200px] mx-auto lg:pt-[30px] pt-[10px]">
+                    <div class="bg-[url('/images/bali-indonesia.jpg')] bg-cover bg-center lg:w-[300px] lg:h-[300px] w-[150px] h-[150px]"></div>
+                    <div class="bg-[url('/images/bali-indonesia.jpg')] bg-cover bg-center lg:w-[300px] lg:h-[300px] w-[150px] h-[150px]"></div>
+                    <div class="bg-[url('/images/bali-indonesia.jpg')] bg-cover bg-center lg:w-[300px] lg:h-[300px] w-[150px] h-[150px]"></div>
+                </div>
+                <div class="w-full h-[70px] flex items-center justify-center">
+                    <a href="gallery-1.html" class="bg-[#3A3A3A] w-[250px] h-[70px] font-bold rounded-full flex items-center justify-center text-white">See More</a>
+                </div>
+            </div>
+        </div>
+         <!-- Content Search -->
+    </section>
+    <!-- Hero Section -->
+    <script src="../src/script.js"></script>
+</body>
+</html>
